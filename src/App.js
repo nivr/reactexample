@@ -1,5 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import { Amplify } from 'aws-amplify';
+import { record } from 'aws-amplify/analytics';
+import { configureAutoTrack } from 'aws-amplify/analytics';
+import amplifyconfig from './amplifyconfiguration.json';
+Amplify.configure(amplifyconfig);
+
+configureAutoTrack({
+  enable: true,
+  type: 'pageView',
+  options: {
+    attributes: {
+      customField: 'placeholderValue'
+    },
+    urlProvider: () => {
+      return window.location.origin + window.location.pathname;
+    }
+  }
+});
 
 function App() {
   return (
