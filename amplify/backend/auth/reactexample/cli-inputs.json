@@ -1,0 +1,12 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "reactexample_identitypool_0c41b42d",
+    "allowUnauthenticatedIdentities": true,
+    "authSelections": "identityPoolOnly",
+    "resourceName": "reactexample",
+    "sharedId": "0c41b42d",
+    "serviceName": "Cognito",
+    "useDefault": "manual"
+  }
+}
