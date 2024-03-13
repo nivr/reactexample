@@ -1,8 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Amplify } from 'aws-amplify';
-import { record } from 'aws-amplify/analytics';
-import { configureAutoTrack } from 'aws-amplify/analytics';
+import { record, configureAutoTrack } from 'aws-amplify/analytics';
 import amplifyconfig from './amplifyconfiguration.json';
 Amplify.configure(amplifyconfig);
 
