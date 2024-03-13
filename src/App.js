@@ -20,6 +20,12 @@ configureAutoTrack({
 });
 
 function App() {
+
+  record({
+    name: 'mainReactComponentLoaded',
+    attributes: { mood: 'spooky', weather: 'sunny' },
+  });
+
   return (
     <div className="App">
       <header className="App-header">
